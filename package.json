@@ -4,9 +4,12 @@
   "homepage": "https://github.com/AlisonT1230/personalWebsite2",
   "private": true,
   "dependencies": {
+    "fontawesome": "^4.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4"
+    "react-fontawesome": "^1.6.1",
+    "react-scripts": "1.1.4",
+    "require": "^2.4.20"
   },
   "scripts": {
     "start": "react-scripts start",

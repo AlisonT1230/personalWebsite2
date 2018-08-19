@@ -2,13 +2,22 @@
 .title {
     background-color: whitesmoke;
     width: auto;
-    height: auto;
-    padding: 30px 5px 20px 5px;
+    height: 80vh;
+    transition: width 2s linear 1s;
+    padding: 20% 0 0 0;
+}
+
+.title p {
+    text-align: center;
 }
 
 /* Device specific */
 
 @media (max-width: 800px) {
+    .title {
+        padding: 50% 0 0 0;
+    }
+
     .title h1 {
         text-align: right;
     }

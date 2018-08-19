@@ -14,42 +14,62 @@ let educationText = "U of T";
 let additionalText = "Omnis sed so eu, so magnam, magnam, exercitation. Consequuntur id cillum rem ad and perspiciatis. Velit non for commodi but esse incidunt ipsum or inventore. Tempor consequuntur yet voluptatem. Tempora eiusmod, and incidunt so numquam, for eos quis or aliqua.";
 let contactText = "Esse incididunt and non exercitationem. Inventore eius qui, yet exercitationem yet eum. Vel. Tempor do, yet aperiam but ut but amet. Sequi anim or officia autem. Nulla tempor or amet quaerat. Incididunt illo, nostrud so commodo. Sit voluptatem aliquid for sequi illum. Dolor anim yet laborum for nisi ut.";
 
+let panels = [ 'aboutMe', 'skills', 'experience', 'accomplishments', 'education', 'additional', 'contact' ];
+
 ReactDOM.render(
-    <Title text="Alison Tong" subtext="Software Engineer | Developer"/>,
+    <Title text="Software Engineer | Developer" subtext="Alison Tong"/>,
     document.getElementById('title')
 );
 
 ReactDOM.render(
-    <Panel title="About Me" backgroundColor="#E1FDCE" text={aboutMeText}/>,
+    <Panel title="About Me" backgroundColor="#E1FDCE" text={aboutMeText} fa="user"/>,
     document.getElementById('aboutMe')
 );
 
 ReactDOM.render(
-    <ListPanel title="Skills" backgroundColor="whitesmoke" items={skillsList}/>,
+    <ListPanel title="Skills" backgroundColor="whitesmoke" items={skillsList} fa="code"/>,
     document.getElementById('skills')
 );
 
 ReactDOM.render(
-    <Panel title="Experience" backgroundColor="#E0FDCE" text={experienceText}/>,
+    <Panel title="Experience" backgroundColor="#E0FDCE" text={experienceText} fa="briefcase"/>,
     document.getElementById('experience')
 );
 
 ReactDOM.render(
-    <Panel title="Accomplishments" backgroundColor="whitesmoke" text={accomplishmentsText}/>,
+    <Panel title="Accomplishments" backgroundColor="whitesmoke" text={accomplishmentsText} fa="trophy"/>,
     document.getElementById('accomplishments')
 );
 
 ReactDOM.render(
-    <Panel title="Education" backgroundColor="#D1FCB6" text={educationText}/>,
+    <Panel title="Education" backgroundColor="#D1FCB6" text={educationText} fa="graduation-cap"/>,
     document.getElementById('education')
 );
 
 ReactDOM.render(
-    <Panel title="Additional" backgroundColor="whitesmoke" text={additionalText}/>,
+    <Panel title="Additional" backgroundColor="whitesmoke" text={additionalText} fa="info-circle"/>,
     document.getElementById('additional')
 );
 
 ReactDOM.render(
-    <Panel title="Contact" backgroundColor="#D1FCB6" text={contactText}/>,
+    <Panel title="Contact" backgroundColor="#D1FCB6" text={contactText} fa="envelope"/>,
     document.getElementById('contact')
 );
+
+ReactDOM.render(
+    <Panel backgroundColor="#282828" text="  "/>,
+    document.getElementById('endBlock')
+);
+
+window.addEventListener('scroll', () => {
+    for(let i = 0; i < panels.length; i++) {
+        let elem = document.getElementById(panels[i]);
+        let elemRect = elem.getBoundingClientRect();
+        if(elemRect.bottom > 0 && elemRect.top < window.outerHeight) {
+            if(!elem.classList.contains('appear')) {
+                elem.classList.remove('hidden');
+                elem.classList.add('appear');
+            }
+        }
+    }
+});

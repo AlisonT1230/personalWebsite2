@@ -1,6 +1,7 @@
 .panel, .listPanel{
     background-color: rgb(255, 255, 255);
-    padding: 10px 50px;
+    padding: 100px 50px;
+    text-align: center;
 }
 
 .panel p {
@@ -9,7 +10,7 @@
 
 @media (max-width: 800px) {
     .panel, .listPanel{
-        padding: 10px 20px;
+        padding: 50px 20px;
     }
 
     .panel p {
