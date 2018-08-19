@@ -1,0 +1,59 @@
+/* Imports */
+
+@font-face {
+    font-family: Nunito;
+    src: url('/src/fonts/Nunito');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('/src/fonts/Roboto');
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0 200px;
+}
+
+/* Headers */
+
+h1 {
+    text-align: left;
+    font-family: Nunito, sans-serif;
+    font-weight: 100;
+    font-size: 300%;
+    color: #5CDB95;
+    margin: 0 5px;
+}
+
+h2 {
+    text-align: left;
+    font-family: Nunito, sans-serif;
+    font-weight: 100;
+    font-size: 150%;
+    color: rgb(93, 127, 180);
+}
+
+h2 {
+    text-align: left;
+    font-family: Nunito, sans-serif;
+    font-weight: 100;
+    font-size: 120%;
+    color: rgb(95, 130, 190);
+}
+
+/* p */
+
+p, li {
+    text-align: justify;
+    font-family: Roboto, sans-serif;
+    margin: 0 5px;
+    color: #05386B;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+}

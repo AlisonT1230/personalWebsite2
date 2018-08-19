@@ -1,0 +1,19 @@
+.panel, .listPanel{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 50px;
+}
+
+.panel p {
+    padding: 0 30px;
+}
+
+@media (max-width: 800px) {
+    .panel, .listPanel{
+        padding: 10px 20px;
+    }
+
+    .panel p {
+        text-align: left;
+        padding: 0 10px;
+    }
+}

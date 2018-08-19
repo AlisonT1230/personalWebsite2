@@ -1,0 +1,19 @@
+/* Divs */
+.title {
+    background-color: whitesmoke;
+    width: auto;
+    height: auto;
+    padding: 30px 5px 20px 5px;
+}
+
+/* Device specific */
+
+@media (max-width: 800px) {
+    .title h1 {
+        text-align: right;
+    }
+
+    .title p {
+        text-align: right;
+    }
+}

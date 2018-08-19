@@ -1,19 +1,17 @@
 {
-  "name": "personalwebsite",
-  "version": "1.0.0",
-  "description": "Alison's personal website.",
-  "main": "index.js",
+  "name": "personal-website",
+  "version": "0.1.0",
+  "homepage": "https://github.com/AlisonT1230/personalWebsite2",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlisonT1230/personalWebsite2.git"
-  },
-  "author": "Alison Tong",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlisonT1230/personalWebsite2/issues"
-  },
-  "homepage": "https://github.com/AlisonT1230/personalWebsite2#readme"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
