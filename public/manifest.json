@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Alison's Personal Website",
+  "name": "Alison's Personal Website",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

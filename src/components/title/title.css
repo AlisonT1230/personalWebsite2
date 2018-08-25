@@ -5,10 +5,17 @@
     height: 80vh;
     transition: width 2s linear 1s;
     padding: 20% 0 0 0;
+    text-align: center;
 }
 
 .title p {
+    font-size: 20px;
     text-align: center;
+}
+
+.title .fa {
+    margin: 10px;
+    color: #5CDB95;
 }
 
 /* Device specific */
@@ -16,6 +23,7 @@
 @media (max-width: 800px) {
     .title {
         padding: 50% 0 0 0;
+        text-align: right;
     }
 
     .title h1 {

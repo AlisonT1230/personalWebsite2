@@ -1,15 +1,5 @@
 /* Imports */
 
-@font-face {
-    font-family: Nunito;
-    src: url('/src/fonts/Nunito');
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url('/src/fonts/Roboto');
-}
-
 body {
     background-color: whitesmoke;
     margin: 0;
@@ -78,5 +68,5 @@ ul {
 
 .appear {
     opacity: 100%;
-    animation: 1s ease-out 0s appear;
+    animation: 1.5s ease-out 0s appear;
 }

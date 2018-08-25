@@ -17,7 +17,7 @@ let contactText = "Esse incididunt and non exercitationem. Inventore eius qui, y
 let panels = [ 'aboutMe', 'skills', 'experience', 'accomplishments', 'education', 'additional', 'contact' ];
 
 ReactDOM.render(
-    <Title text="Software Engineer | Developer" subtext="Alison Tong"/>,
+    <Title text="Software Engineer | Developer" subtext="Alison Tong" linkedin="https://linkedin.com/in/alisont1230" github="https://github.com/AlisonT1230"/>,
     document.getElementById('title')
 );
 
@@ -64,9 +64,9 @@ ReactDOM.render(
 window.addEventListener('scroll', () => {
     for(let i = 0; i < panels.length; i++) {
         let elem = document.getElementById(panels[i]);
-        let elemRect = elem.getBoundingClientRect();
-        if(elemRect.bottom > 0 && elemRect.top < window.outerHeight) {
-            if(!elem.classList.contains('appear')) {
+        if(!elem.classList.contains('appear')) {
+            let elemRect = elem.getBoundingClientRect();
+            if(elemRect.bottom > 0 && elemRect.top < window.outerHeight) {
                 elem.classList.remove('hidden');
                 elem.classList.add('appear');
             }
