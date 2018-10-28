@@ -4,15 +4,26 @@ import './index.css';
 import Title from './components/title/title';
 import Panel from './components/panel/panel';
 import ListPanel from './components/panel/listpanel';
+import aboutMeImage from './images/background1.png';
+import skillsImage from './images/background2.png';
+import experienceImage from './images/background3.png';
+import accomplishmentImage from './images/background4.png';
 
-let aboutMeText = "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.";
+
+let aboutMeText = "As a student, employee and overall curious human being, I love learning how things work and using that knowledge in all sorts of weird and fun ways. I am also a part of the Dāna Project developer team where I volunteer some of my time on a weekly basis to contribute to the efforts to help alleviate poverty. Over time, I would like to learn about and work with a wide variety of topics in computer science.  A few items on that list would include web & mobile development, game design, and machine learning. That being said, I am always excited to explore new concepts in other fields and I never back down from a challenge.";
 let skillsList = ["Java", "Python", "JavaScript",
-            "HTML", "CSS", "C", "Haskell", "Racket", "PostgreSQL"];
-let experienceText = "Occaecat incididunt for commodo omnis autem voluptatem and aspernatur. Et dolores nesciunt dolorem. Corporis quae illo eum. Exercitationem incididunt but ad, so quaerat tempora amet. Id ut yet illo magna dolore, or fugit. Non consequat for aut sit or eaque yet sunt.";
-let accomplishmentsText = "Consequatur totam natus vitae but fugiat. Eum eu exercitationem. Et eius yet sed, officia est. Ab sunt for exercitationem commodi iste but illum fugit.";
-let educationText = "U of T";
-let additionalText = "Omnis sed so eu, so magnam, magnam, exercitation. Consequuntur id cillum rem ad and perspiciatis. Velit non for commodi but esse incidunt ipsum or inventore. Tempor consequuntur yet voluptatem. Tempora eiusmod, and incidunt so numquam, for eos quis or aliqua.";
-let contactText = "Esse incididunt and non exercitationem. Inventore eius qui, yet exercitationem yet eum. Vel. Tempor do, yet aperiam but ut but amet. Sequi anim or officia autem. Nulla tempor or amet quaerat. Incididunt illo, nostrud so commodo. Sit voluptatem aliquid for sequi illum. Dolor anim yet laborum for nisi ut.";
+            "HTML", "CSS", "C", "Haskell", "Racket"];
+let experienceText = [
+    "Software Engineer Co-op · BlueCat · May 2018 - Present",
+    "Software Developer · Dāna Project · May 2017 - Present"];
+let accomplishmentsText = [
+    "Built MVP in a team of 7", 
+    "Highschool award in computer science",
+    "Aided in full stack development of mobile application",
+    "Accumulated 7 Co-Curricular records"];
+let educationText = "University of Toronto · Computer Science Specialist";
+let additionalText = "Outside of academics, I play intramural basketball, sing in a small, close-knit choir, snap photos of wildlife at the park, dabble in graphic design and work on personal projects to expand my skillset beyond what university offers.";
+let contactText = "Reach me at alison.tong@mail.utoronto.ca.";
 
 let panels = [ 'aboutMe', 'skills', 'experience', 'accomplishments', 'education', 'additional', 'contact' ];
 
@@ -22,22 +33,22 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Panel title="About Me" backgroundColor="#E1FDCE" text={aboutMeText} fa="user"/>,
+    <Panel title="About Me" backgroundImage={aboutMeImage} text={aboutMeText} headingColor="#FF72B4" textColor="white" fa="user" faColor="#B8DDD4" boxShade="darkbox"/>,
     document.getElementById('aboutMe')
 );
 
 ReactDOM.render(
-    <ListPanel title="Skills" backgroundColor="whitesmoke" items={skillsList} fa="code"/>,
+    <ListPanel title="Skills" backgroundImage={skillsImage} items={skillsList} headingColor="#B8DDD4" textColor="white" fa="code" faColor="#FF72B4" boxShade="darkbox"/>,
     document.getElementById('skills')
 );
 
 ReactDOM.render(
-    <Panel title="Experience" backgroundColor="#E0FDCE" text={experienceText} fa="briefcase"/>,
+    <ListPanel title="Experience" backgroundImage={experienceImage} items={experienceText} headingColor="#FF72B4" textColor="#764B93" fa="briefcase" faColor="#764B93" boxShade="lightbox"/>,
     document.getElementById('experience')
 );
 
 ReactDOM.render(
-    <Panel title="Accomplishments" backgroundColor="whitesmoke" text={accomplishmentsText} fa="trophy"/>,
+    <ListPanel title="Accomplishments" backgroundImage={accomplishmentImage} items={accomplishmentsText} headingColor="#B8DDD4" textColor="white" fa="trophy" faColor="#FF72B4" boxShade="darkbox"/>,
     document.getElementById('accomplishments')
 );
 
@@ -47,7 +58,7 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Panel title="Additional" backgroundColor="whitesmoke" text={additionalText} fa="info-circle"/>,
+    <Panel title="Additional" backgroundColor="#B8DDD4" text={additionalText} fa="info-circle"/>,
     document.getElementById('additional')
 );
 

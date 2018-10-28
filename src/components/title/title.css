@@ -1,6 +1,6 @@
 /* Divs */
 .title {
-    background-color: whitesmoke;
+    background-color: #B8DDD4;
     width: auto;
     height: 80vh;
     transition: width 2s linear 1s;
@@ -15,7 +15,7 @@
 
 .title .fa {
     margin: 10px;
-    color: #5CDB95;
+    color: #FF72B4;
 }
 
 /* Device specific */

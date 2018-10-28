@@ -1,7 +1,7 @@
 /* Imports */
 
 body {
-    background-color: whitesmoke;
+    background-color: #B8DDD4;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@ h1 {
     font-family: Nunito, sans-serif;
     font-weight: 100;
     font-size: 300%;
-    color: #5CDB95;
+    color: #764B93;
     margin: 0 5px;
 }
 
@@ -22,29 +22,40 @@ h2 {
     font-family: Nunito, sans-serif;
     font-weight: 100;
     font-size: 150%;
-    color: rgb(93, 127, 180);
+    color: #764B93;
 }
 
 /* p */
 
 p, li{
-    text-align: justify;
+    display: inline-block;
     font-family: Roboto, sans-serif;
-    margin: 0 5px;
-    color: #05386B;
+    color: #2C2C3D;
 }
 
 ul {
-    margin-left: 40%;
+   text-align: center;
+   padding-left: 0;
+}
+
+/* br */
+
+br {
+    display: none;
 }
 
 @media (max-width: 800px) {
+    p, li {
+        display: block;
+    }
+
     body {
         padding: 0;
     }
 
     ul {
-        margin-left: 10%
+        padding-left: auto;
+        margin-left: auto;
     }
 }
 
@@ -68,5 +79,5 @@ ul {
 
 .appear {
     opacity: 100%;
-    animation: 1.5s ease-out 0s appear;
+    animation: 1.0s ease-out 0s appear;
 }

@@ -5,11 +5,12 @@ var FontAwesome = require('react-fontawesome')
 
 export default class ListPanel extends React.Component {
     render() {
-        const items = this.props.items.map((x) => <li key={x}>{x}</li>);
+        const items = this.props.items.map((x) => <div key={x}><li style={{color: this.props.textColor}} key={x}>{x}</li><br/></div>);
         return (
-            <div className="listPanel" style={{backgroundColor: this.props.backgroundColor}}>
-                <FontAwesome name={this.props.fa} size="5x"/>
-                <h2>{this.props.title}</h2>
+            <div className={`panel ${this.props.boxShade}`} style={{backgroundColor: this.props.backgroundColor,
+                backgroundImage: `url(${this.props.backgroundImage})`}}>
+                <FontAwesome style={{color: this.props.faColor}} name={this.props.fa} size="5x"/>
+                <h2 style={{color: this.props.headingColor}}>{this.props.title}</h2>
                 <ul>{items}</ul>
             </div>
         );
