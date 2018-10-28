@@ -8,7 +8,7 @@ import background1 from './images/background1.png';
 import background2 from './images/background2.png';
 import background3 from './images/background3.png';
 import background4 from './images/background4.png';
-
+import me from './images/me.png';
 
 let aboutMeText = "As a student, employee and overall curious human being, I love learning how things work and using that knowledge in all sorts of weird and fun ways. I am also a part of the Dāna Project developer team where I volunteer some of my time on a weekly basis to contribute to the efforts to help alleviate poverty. Over time, I would like to learn about and work with a wide variety of topics in computer science.  A few items on that list would include web & mobile development, game design, and machine learning. That being said, I am always excited to explore new concepts in other fields and I never back down from a challenge.";
 let skillsList = ["Java", "Python", "JavaScript",
@@ -37,7 +37,7 @@ ReactDOM.render(
         backgroundImage={background1} 
         text={aboutMeText} 
         headingColor="#FF72B4" textColor="white" 
-        fa="user" faColor="#B8DDD4" 
+        image={me} alt="A picture of me!"
         boxShade="darkbox"/>,
     document.getElementById('aboutMe')
 );
