@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://github.com/AlisonT1230/personalWebsite2",
+  "homepage": "https://AlisonT1230.github.io/personalWebsite2",
   "private": true,
   "dependencies": {
     "fontawesome": "^4.7.2",
@@ -15,6 +15,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
