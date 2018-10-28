@@ -9,8 +9,10 @@ class Title extends React.Component {
             <div className="title">
                 <h1>{this.props.text}</h1>
                 <p>{this.props.subtext}</p>
-                <a href={this.props.linkedin} target="_blank"><FontAwesome className="fa" name={"linkedin-square"} size="2x"/></a>
-                <a href={this.props.github} target="_blank"><FontAwesome className="fa" name={"github"} size="2x"/></a>
+                <div id="logoLinks">
+                    <a href={this.props.linkedin} target="_blank"><FontAwesome className="fa" name={"linkedin-square"} size="2x"/></a>
+                    <a href={this.props.github} target="_blank"><FontAwesome className="fa" name={"github"} size="2x"/></a>
+                </div>                
             </div>
         );
     }

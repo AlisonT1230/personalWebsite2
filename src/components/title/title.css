@@ -18,6 +18,10 @@
     color: #FF72B4;
 }
 
+.title #logoLinks {
+    display: block;
+}
+
 /* Device specific */
 
 @media (max-width: 800px) {

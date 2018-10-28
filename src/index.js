@@ -4,10 +4,10 @@ import './index.css';
 import Title from './components/title/title';
 import Panel from './components/panel/panel';
 import ListPanel from './components/panel/listpanel';
-import aboutMeImage from './images/background1.png';
-import skillsImage from './images/background2.png';
-import experienceImage from './images/background3.png';
-import accomplishmentImage from './images/background4.png';
+import background1 from './images/background1.png';
+import background2 from './images/background2.png';
+import background3 from './images/background3.png';
+import background4 from './images/background4.png';
 
 
 let aboutMeText = "As a student, employee and overall curious human being, I love learning how things work and using that knowledge in all sorts of weird and fun ways. I am also a part of the Dāna Project developer team where I volunteer some of my time on a weekly basis to contribute to the efforts to help alleviate poverty. Over time, I would like to learn about and work with a wide variety of topics in computer science.  A few items on that list would include web & mobile development, game design, and machine learning. That being said, I am always excited to explore new concepts in other fields and I never back down from a challenge.";
@@ -17,8 +17,8 @@ let experienceText = [
     "Software Engineer Co-op · BlueCat · May 2018 - Present",
     "Software Developer · Dāna Project · May 2017 - Present"];
 let accomplishmentsText = [
-    "Built MVP in a team of 7", 
-    "Highschool award in computer science",
+    "Built Java + JavaFX MVP in a team of 7", 
+    "Graduated highschool with awards in computer science and communications technology",
     "Aided in full stack development of mobile application",
     "Accumulated 7 Co-Curricular records"];
 let educationText = "University of Toronto · Computer Science Specialist";
@@ -33,44 +33,81 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Panel title="About Me" backgroundImage={aboutMeImage} text={aboutMeText} headingColor="#FF72B4" textColor="white" fa="user" faColor="#B8DDD4" boxShade="darkbox"/>,
+    <Panel title="About Me" 
+        backgroundImage={background1} 
+        text={aboutMeText} 
+        headingColor="#FF72B4" textColor="white" 
+        fa="user" faColor="#B8DDD4" 
+        boxShade="darkbox"/>,
     document.getElementById('aboutMe')
 );
 
 ReactDOM.render(
-    <ListPanel title="Skills" backgroundImage={skillsImage} items={skillsList} headingColor="#B8DDD4" textColor="white" fa="code" faColor="#FF72B4" boxShade="darkbox"/>,
+    <ListPanel title="Skills" 
+        backgroundColor="whitesmoke" 
+        items={skillsList} 
+        headingColor="#764B93" textColor="#2C2C3D" 
+        fa="code" faColor="#FF72B4"/>,
     document.getElementById('skills')
 );
 
 ReactDOM.render(
-    <ListPanel title="Experience" backgroundImage={experienceImage} items={experienceText} headingColor="#FF72B4" textColor="#764B93" fa="briefcase" faColor="#764B93" boxShade="lightbox"/>,
+    <ListPanel title="Experience" 
+        backgroundImage={background2} 
+        items={experienceText} 
+        headingColor="#FF72B4" textColor="white" 
+        fa="briefcase" faColor="#B8DDD4" 
+        boxShade="darkbox"/>,
     document.getElementById('experience')
 );
 
 ReactDOM.render(
-    <ListPanel title="Accomplishments" backgroundImage={accomplishmentImage} items={accomplishmentsText} headingColor="#B8DDD4" textColor="white" fa="trophy" faColor="#FF72B4" boxShade="darkbox"/>,
+    <ListPanel title="Accomplishments" 
+        backgroundColor="whitesmoke" 
+        items={accomplishmentsText} 
+        headingColor="#FF72B4" textColor="#2C2C3D" 
+        fa="trophy" faColor="#764B93"/>,
     document.getElementById('accomplishments')
 );
 
 ReactDOM.render(
-    <Panel title="Education" backgroundColor="#D1FCB6" text={educationText} fa="graduation-cap"/>,
+    <Panel title="Education" 
+        backgroundImage={background3} 
+        text={educationText} 
+        headingColor="#FF72B4" textColor="white" 
+        fa="graduation-cap" faColor="#B8DDD4" 
+        boxShade="darkbox"/>,
     document.getElementById('education')
 );
 
 ReactDOM.render(
-    <Panel title="Additional" backgroundColor="#B8DDD4" text={additionalText} fa="info-circle"/>,
+    <Panel title="Additional" 
+        backgroundColor="whitesmoke" 
+        text={additionalText} 
+        headingColor="#764B93" textColor="#2C2C3D" 
+        fa="info-circle" faColor="#FF72B4"/>,
     document.getElementById('additional')
 );
 
 ReactDOM.render(
-    <Panel title="Contact" backgroundColor="#D1FCB6" text={contactText} fa="envelope"/>,
+    <Panel title="Contact" 
+        backgroundImage={background4} 
+        text={contactText}
+        headingColor="#FF72B4" textColor="white" 
+        fa="envelope" faColor="#B8DDD4" 
+        boxShade="darkbox"/>,
     document.getElementById('contact')
 );
 
 ReactDOM.render(
-    <Panel backgroundColor="#282828" text="  "/>,
+    <Panel backgroundColor="#282828" 
+        text="Thanks for your time." 
+        textColor="white"
+        fa="smile-o" faColor="#FF72B4"/>,
     document.getElementById('endBlock')
 );
+
+// Panel animation logic
 
 window.addEventListener('scroll', () => {
     for(let i = 0; i < panels.length; i++) {
