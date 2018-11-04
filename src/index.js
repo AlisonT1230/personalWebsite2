@@ -28,7 +28,7 @@ let contactText = "Reach me at alison.tong@mail.utoronto.ca.";
 let panels = [ 'aboutMe', 'skills', 'experience', 'accomplishments', 'education', 'additional', 'contact' ];
 
 ReactDOM.render(
-    <Title text="Software Engineer | Developer" subtext="Alison Tong" linkedin="https://linkedin.com/in/alisont1230" github="https://github.com/AlisonT1230"/>,
+    <Title text="Software Engineer | Developer" altText1="Software Engineer" altText2="Developer" subtext="Alison Tong" linkedin="https://linkedin.com/in/alisont1230" github="https://github.com/AlisonT1230"/>,
     document.getElementById('title')
 );
 

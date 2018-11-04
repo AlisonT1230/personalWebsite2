@@ -22,19 +22,25 @@
     display: block;
 }
 
+.title hr {
+    border: 0.5px solid #764B93;
+    width: 15%;
+}
+
 /* Device specific */
 
 @media (max-width: 750px) {
     .title {
         padding: 50% 0 0 0;
-        text-align: right;
+        text-align: center;
     }
 
     .title h1 {
-        text-align: right;
+        font-size: 30px;
+        text-align: center;
     }
 
     .title p {
-        text-align: right;
+        text-align: center;
     }
 }
