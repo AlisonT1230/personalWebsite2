@@ -31,12 +31,19 @@ p, li{
     display: inline-block;
     font-family: Roboto, sans-serif;
     color: #2C2C3D;
+    white-space: pre-wrap;
 }
 
 ul {
-   text-align: center;
-   padding-left: 0;
+    display: inline-block;
+    text-align: center;
+    padding-left: 0;
 }
+
+.listpanel-left {
+    display: inline-block;
+    text-align: left;
+} 
 
 /* br */
 
@@ -47,6 +54,7 @@ br {
 @media (max-width: 750px) {
     p, li {
         display: block;
+        min-height: 15px;
     }
 
     body {
@@ -57,25 +65,9 @@ br {
         padding-left: auto;
         margin-left: auto;
     }
-}
 
-/* Animation */
-
-@keyframes appear {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.hidden {
-    opacity: 0;
-}
-
-.appear {
-    opacity: 1;
-    animation: 1.0s ease-out 0s appear;
+    .listpanel-left {
+        display: inline-block;
+        text-align: left;
+    } 
 }

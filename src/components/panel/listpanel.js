@@ -13,7 +13,7 @@ export default class ListPanel extends React.Component {
                     backgroundImage: `url(${this.props.backgroundImage})`}}>
                 <FontAwesome style={{color: this.props.faColor}} name={this.props.fa} size="5x"/>
                 <h2 style={{color: this.props.headingColor}}>{this.props.title}</h2>
-                <ul>{items}</ul>
+                <ul className={this.props.alignment ? "listpanel-" + this.props.alignment : "listpanelitem-center"}>{items}</ul>
             </div>
         );
     }
