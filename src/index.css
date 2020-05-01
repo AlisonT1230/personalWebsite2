@@ -63,12 +63,10 @@ br {
 
 @keyframes appear {
     0% {
-        opacity: 0;
         transform: translateY(100%);
     }
 
     100% {
-        opacity: 100%;
         transform: translateY(0);
     }
 }
@@ -78,6 +76,6 @@ br {
 }
 
 .appear {
-    opacity: 100%;
+    opacity: 1;
     animation: 1.0s ease-out 0s appear;
 }
